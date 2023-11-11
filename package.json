@@ -6,6 +6,10 @@
   "repository": "https://github.com/RonaldY98/portfolio_website.git",
   "author": "RonaldY98 <16tfry@queensu.ca>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --mode=development --open --hot",
+    "build": "webpack --mode=production"
+  },
   "dependencies": {
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
