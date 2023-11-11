@@ -1,0 +1,9 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "Portfolio website for Ronny Yeung",
+  "main": "./src/index.js",
+  "repository": "https://github.com/RonaldY98/portfolio_website.git",
+  "author": "RonaldY98 <16tfry@queensu.ca>",
+  "license": "MIT"
+}
