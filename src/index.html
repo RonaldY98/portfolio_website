@@ -2,12 +2,127 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>React Boilerplate</title>
+  <meta charset="utf-8" />
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Ronald Yeung's Portfolio Website" />
+  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Ronny Yeung - Software Engineer</title>
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .active-scroll-spy {
+      opacity: 90;
+      color: white;
+      border-radius: 15px;
+      animation: fadeIn 3s;
+    }
+
+    .navbar {
+      align-self: flex-start;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 
-<body>
+<body class="font-raleway bg-black no-scrollbar">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- <script>
+
+  /* http://jsfiddle.net/LwLBx/ */
+
+  // Cache selectors
+  var lastId,
+    topMenu = $("#nav-bar"),
+    topMenuHeight = topMenu.outerHeight() + 175,
+    // All list items
+    menuItems = topMenu.find("li"),
+    linkItems = menuItems.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = linkItems.map(function () {
+      var item = $($(this).attr("href"));
+      if (item.length) {
+        return item;
+      }
+    });
+
+  // Bind click handler to menu items
+  // so we can get a fancy scroll animation
+  menuItems.click(function (e) {
+    var href = $(this).find("a").attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 300;
+    $('html, body').stop().animate({
+      scrollTop: offsetTop
+    }, 800);
+    if (!helpMenuDiv.classList.contains("hidden")) {
+      helpMenuDiv.classList.add("hidden");
+    }
+    e.preventDefault();
+  });
+
+  // Bind to scroll
+  $(window).scroll(function () {
+    // Get container scroll position
+    var fromTop = $(this).scrollTop() + topMenuHeight + 1;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map(function () {
+      if ($(this).offset().top < fromTop)
+        return this;
+    });
+    // Get the id of the current element
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+
+    if (lastId !== id) {
+      lastId = id;
+      // Set/remove active class
+      linkItems
+        .parent().removeClass("bg-opacity-100 text-opacity-60").addClass("bg-opacity-90 text-opacity-20")
+        .end().filter("[href='#" + id + "']").parent().addClass("bg-opacity-100 text-opacity-60").removeClass("bg-opacity-90 text-opacity-20");
+    }
+  });
+
+</script> -->
 
 </html>
