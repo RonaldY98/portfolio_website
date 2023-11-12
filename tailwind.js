@@ -255,6 +255,13 @@ module.exports = {
       "2xl": "0 25px 25px rgb(0 0 0 / 0.15)",
       none: "0 0 #0000",
     },
+    extend: {
+      colors: {},
+      fontFamily: {
+        raleway: ["Raleway"],
+        inter: ["Inter"],
+      },
+    },
     fill: ({ theme }) => ({
       none: "none",
       ...theme("colors"),
