@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   //This property defines where the application starts
-  entry: "./src/index.js",
+  entry: "./src/index.tsx",
 
   //This property defines the file path and the file name which will be used for deploying the bundled file
   output: {
@@ -11,12 +11,13 @@ module.exports = {
     filename: "bundle.js",
   },
 
-  // Pathname resolutions
+  // Extension resolutions
   resolve: {
     modules: [path.join(__dirname, "src"), "node_modules"],
     alias: {
       react: path.join(__dirname, "node_modules", "react"),
     },
+    extensions: [".tsx", ".ts", ".js"],
   },
 
   // Setup loaders
@@ -28,6 +29,11 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+      },
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        loader: "ts-loader",
       },
       {
         test: /\.css$/,
