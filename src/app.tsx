@@ -6,9 +6,9 @@ import Title from "./components/title";
 
 const Main = () => {
   return (
-    <div className="relative">
+    <div className="relative bg-black">
       <img
-        className="opacity-75 top-0 left-0 fixed w-full h-auto"
+        className="bg-image top-0 left-0 fixed w-full h-auto"
         src={Jupiter_Juno}
         alt="background image"
       ></img>
