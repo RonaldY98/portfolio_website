@@ -5,7 +5,7 @@ const Title = () => {
   return (
     <div className="h-screen pt-96 " id="section_1">
       <motion.h1
-        className="flex justify-center text-8xl text-yellow-200 mb-3 font-inter font-light"
+        className="flex justify-center text-8xl text-amber-200 mb-3 font-inter font-light"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         transition={{ duration: 0.3 }}

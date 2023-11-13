@@ -7,7 +7,7 @@ const AboutMe = () => {
     <div className="text-white mb-20 text-left" id="section_2">
       <div className="flex flex-row space-x-2">
         <div className="w-4/6">
-          <h2 className="text-6xl text-yellow-200">ABOUT ME</h2>
+          <h2 className="text-6xl text-amber-200">ABOUT ME</h2>
           <h3 className="text-4xl">It's Me, Hi</h3>
           <div className="text-3xl">
             <p className="mb-5">

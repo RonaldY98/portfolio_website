@@ -3,7 +3,7 @@ import * as React from 'react';
 const Projects = () => {
   return (
     <div className="text-white my-20 text-right" id="section_3">
-      <h2 className="text-6xl text-yellow-200">PROJECTS</h2>
+      <h2 className="text-6xl text-amber-200">PROJECTS</h2>
       <p className="text-4xl">
         Bet you couldn't wait to get to this part could ya?
       </p>

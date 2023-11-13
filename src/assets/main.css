@@ -722,6 +722,11 @@ video {
   font-weight: 300;
 }
 
+.text-amber-200{
+  --tw-text-opacity: 1;
+  color: rgb(253 230 138 / var(--tw-text-opacity));
+}
+
 .text-gray-100{
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));

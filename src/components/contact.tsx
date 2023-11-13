@@ -2,7 +2,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className="text-white my-20 mb-36 text-left w-4/6" id="section_4">
-      <h2 className="text-6xl text-yellow-200">CONTACT</h2>
+      <h2 className="text-6xl text-amber-200">CONTACT</h2>
       <p className="text-4xl">
         Carrier pigeon is my primary mode of communication
       </p>
