@@ -4,7 +4,7 @@ import Footer from "./components/footer";
 import Jupiter_Juno from 'assets/images/Jupiter_Juno.jpg'
 import Title from "./components/title";
 
-const Main = () => {
+const App = () => {
   return (
     <div className="relative bg-black">
       <img
@@ -21,4 +21,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default App;
